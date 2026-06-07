@@ -1,0 +1,53 @@
+:root {
+ 
+  --color-primary:          #E85D04;   /* Naranja principal Coéxito */
+  --color-primary-hover:    #C94D00;   /* Naranja oscuro hover */
+ 
+  --color-blue-icon:        #5B8DEF;   /* Azul íconos inputs */
+  --color-blue-brand:       #1B4FBB;   /* Azul texto logo */
+ 
+  --color-bg:               #E8ECF2;   /* Fondo general gris azulado */
+  --color-card-bg:          #FFFFFF;   /* Fondo card login */
+ 
+  --color-border:           #D1D5DB;   /* Borde inputs normal */
+  --color-border-focus:     #E85D04;   /* Borde inputs focus */
+  --color-border-error:     #DC2626;   /* Borde inputs error */
+  --color-border-valid:     #16A34A;   /* Borde inputs válido */
+ 
+  --color-text-primary:     #1F2937;   /* Texto principal */
+  --color-text-label:       #374151;   /* Labels formulario */
+  --color-text-placeholder: #9CA3AF;   /* Placeholder inputs */
+  --color-text-error:       #DC2626;   /* Mensajes de error */
+  --color-text-title:       #E85D04;   /* Título gestión empleados */
+  --color-text-footer:      #FFFFFF;   /* Texto footer */
+  --color-white:            #FFFFFF;
+
+  --font-family:            'Nunito', sans-serif;
+  --font-size-xs:           12px;
+  --font-size-sm:           14px;
+  --font-size-base:         16px;
+  --font-size-lg:           20px;
+  --font-size-xl:           24px;
+ 
+  --spacing-xs:             4px;
+  --spacing-sm:             8px;
+  --spacing-md:             16px;
+  --spacing-lg:             24px;
+  --spacing-xl:             32px;
+  --spacing-2xl:            48px;
+ 
+  --border-radius-sm:       6px;
+  --border-radius-md:       10px;
+  --border-radius-lg:       16px;
+  --border-radius-btn:      8px;
+ 
+  --shadow-card:            0 4px 24px rgba(0, 0, 0, 0.10);
+  --shadow-input-focus:     0 0 0 3px rgba(232, 93, 4, 0.15);
+ 
+  --transition-fast:        0.2s ease;
+  --transition-base:        0.3s ease;
+ 
+  --footer-bg:              #E85D04;
+  --footer-height:          48px;
+}
+ 
