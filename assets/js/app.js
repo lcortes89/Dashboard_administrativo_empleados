@@ -1,11 +1,11 @@
 import { validateEmail, validatePassword } from './validators.js';
 import { saveSession, checkSession } from './session.js';
  
-// --- Credenciales hardcodeadas (proyecto educativo) ---
-const CREDENTIALS = {
-  email: 'lcortes@coexito.com.co',
-  password: 'Analia2026**',
-};
+async function getCredentials() {
+  const response = await fetch('./db/user.json');
+  const users = await response.json();
+  return users[0];
+}
  
 // --- Selección de elementos del DOM ---
 const loginForm    = document.getElementById('loginForm');
@@ -77,30 +77,24 @@ passwordInput.addEventListener('input', () => {
   updateSubmitButton();
 });
  
-loginForm.addEventListener('submit', (event) => {
+loginForm.addEventListener('submit', async (event) => {
   event.preventDefault();
- 
+
   const emailVal    = emailInput.value.trim();
   const passwordVal = passwordInput.value.trim();
- 
-  // Limpiar error general previo
-  generalError.textContent = '';
-  generalError.classList.remove('visible');
- 
-  // Verificar credenciales
-  const emailMatch    = emailVal === CREDENTIALS.email;
-  const passwordMatch = passwordVal === CREDENTIALS.password;
- 
+
+  // Obtener credenciales del JSON
+  const credentials = await getCredentials();
+
+  const emailMatch    = emailVal === credentials.email;
+  const passwordMatch = passwordVal === credentials.password;
+
   if (emailMatch && passwordMatch) {
-    // ✅ Escenario 1: Login exitoso
     saveSession({ email: emailVal });
     window.location.href = 'dashboard.html';
   } else {
-    // ❌ Escenario 2: Credenciales incorrectas
-    generalError.textContent = 'Correo o contraseña incorrectos. Verifica tus datos e intenta de nuevo.';
+    generalError.textContent = 'Correo o contraseña incorrectos.';
     generalError.classList.add('visible');
- 
-    // Marcar ambos inputs como error
     setInputState(emailInput, false);
     setInputState(passwordInput, false);
   }
