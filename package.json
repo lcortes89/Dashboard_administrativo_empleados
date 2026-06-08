@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/lcortes89/Dashboard_administrativo_empleados#readme",
   "devDependencies": {
+    "jsdom": "^29.1.1",
     "vitest": "^4.1.8"
   }
 }
