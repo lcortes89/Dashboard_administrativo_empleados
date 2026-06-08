@@ -1,3 +1,4 @@
 .DS_Store
 node_modules/
-echo db/user.json
+db/user.json
+assets/db/user.json
