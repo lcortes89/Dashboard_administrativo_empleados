@@ -1,0 +1,22 @@
+{
+  "name": "dashboard_administrativo_empleados",
+  "version": "1.0.0",
+  "description": "",
+  "main": "assets/js/app.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcortes89/Dashboard_administrativo_empleados.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lcortes89/Dashboard_administrativo_empleados/issues"
+  },
+  "homepage": "https://github.com/lcortes89/Dashboard_administrativo_empleados#readme"
+}
