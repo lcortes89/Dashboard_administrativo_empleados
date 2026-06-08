@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dashboard de gestión de empleados - Coéxito" />
+    <title>Coéxito | Dashboard Empleados</title>
+ 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+ 
+    <!-- CSS Modular -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+  </head>
+ 
+  <body>
+ 
+    <header class="dashboard-header" role="banner">
+      <div class="header-logo">
+        <img
+          src="assets/img/logo-coexito-white.png"
+          alt="Logo Coéxito"
+          class="header-logo-img"
+          onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';"
+        />
+        <div id="logo-fallback" class="logo-fallback" style="display:none;" aria-hidden="true">
+          <span class="logo-text">coéxito</span>
+          <span class="logo-icon">🔧</span>
+        </div>
+      </div>
+ 
+      <button
+        id="logoutBtn"
+        class="btn-logout"
+        aria-label="Cerrar sesión"
+      >
+        <span class="logout-icon" aria-hidden="true">↪</span>
+        <span>Cerrar Sesión</span>
+      </button>
+    </header>
+ 
+    <main class="dashboard-main" role="main">
+ 
+      <section class="filter-section" aria-label="Filtrar empleados por inicial">
+        <div class="filter-label">
+          <span class="filter-icon" aria-hidden="true">⚡</span>
+          <span>Filtrar por inicial</span>
+        </div>
+ 
+        <div class="filter-buttons" role="group" aria-label="Letras del abecedario">
+          <button class="btn-filter btn-filter--active" data-letter="TODOS" aria-pressed="true">
+            TODOS
+          </button>
+
+        </div>
+      </section>
+ 
+      <section class="table-section" aria-label="Listado de empleados">
+ 
+        <div id="loading-msg" class="status-msg" role="status" aria-live="polite">
+          Cargando empleados...
+        </div>
+ 
+        <div id="error-msg" class="status-msg status-msg--error" role="alert" aria-live="assertive" style="display:none;">
+          No se pudo conectar con el servidor. Intenta nuevamente más tarde.
+        </div>
+ 
+        <div id="empty-msg" class="status-msg" role="status" aria-live="polite" style="display:none;">
+          No se encontraron empleados con esa inicial.
+        </div>
+
+        <div class="table-wrapper" style="display:none;">
+          <table class="employees-table" id="employeesTable" aria-label="Tabla de empleados">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Email</th>
+                <th scope="col">Dirección (Calle)</th>
+                <th scope="col">Suite</th>
+                <th scope="col">Ciudad</th>
+                <th scope="col">Código Postal</th>
+              </tr>
+            </thead>
+            <tbody id="employeesBody">
+
+            </tbody>
+          </table>
+        </div>
+ 
+      </section>
+ 
+    </main>
+ 
+    <footer class="dashboard-footer" role="contentinfo">
+      <p class="footer-text">Training Developer · F5 Bootcamp</p>
+    </footer>
+ 
+    <script type="module" src="assets/js/dashboard.js"></script>
+ 
+  </body>
+</html>
