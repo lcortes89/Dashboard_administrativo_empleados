@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/lcortes89/Dashboard_administrativo_empleados/issues"
   },
-  "homepage": "https://github.com/lcortes89/Dashboard_administrativo_empleados#readme"
+  "homepage": "https://github.com/lcortes89/Dashboard_administrativo_empleados#readme",
+  "devDependencies": {
+    "vitest": "^4.1.8"
+  }
 }
