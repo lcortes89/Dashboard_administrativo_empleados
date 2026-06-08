@@ -11,7 +11,7 @@ Permite el acceso mediante login con email y contraseña, muestra un listado de 
 
 Capturas del prototipo diseñado en Figma/Stitch:
 
-![Prototipo Login](assets/img/Logueo.png)
+![Prototipo Login](assets/img/Logeo.png)
 ![Prototipo Dashboard](assets/img/Dashboard.png)
 
 ---
@@ -31,7 +31,7 @@ El flujo de usuario de la aplicación es el siguiente:
 5. En el dashboard el usuario puede gestionar y filtrar empleados
 6. Al hacer clic en **Logout**, se elimina la sesión y vuelve al inicio
 
-![Userflow](assets/img/userflow.png)
+![Userflow](assets/img/Userflow.png)
 
 ---
 
@@ -133,7 +133,7 @@ Proyecto gestionado con **Jira** en un sprint de 1 semana, iniciando el 28 de Ma
 
 <!-- Reemplaza estas líneas con tus imágenes -->
 ![Jira Cronograma](assets/img/Cronograma_jira.png)
-![Jira Historias](assets/img/Epicas-jira.png)
+![Jira Historias](assets/img/Epicas_jira.png)
 
 ---
 
