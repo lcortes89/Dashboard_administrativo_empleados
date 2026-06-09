@@ -1,1 +1,6 @@
-git log --oneline -- db/user.json
+[
+  {
+    "email": "admin@coexito.com",
+    "password": "Admin1234"
+  }
+]
