@@ -196,6 +196,16 @@ Proyecto gestionado con **Jira** en un sprint de 1 semana, iniciando el 28 de Ma
 - Git + GitHub + GitHub Pages
 
 ---
+## Credenciales de acceso (demo)
+
+> ⚠️ Proyecto de demostración. Las credenciales son ficticias y de uso exclusivo para pruebas.
+
+| Campo      | Valor |
+|---|---     |
+| Email      | admin@coexito.com |
+| Contraseña | Admin1234 |
+
+---
 
 #### 👩🏻‍💻Autora
 
